@@ -5,56 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="modern-normalize.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <title>Studio</title>
 </head>
 <body>
   <header>
-    <nav>
-      <a class="navigation-logo" href="http://127.0.0.1:5500/index.html" target="_blank" rel="noopener noreferrer"><span style="color: var(--iris, #4D5AE5);">Web</span>Studio</a>
+    <div class="navigation-container">
+      <nav>
+        <a class="navigation-logo" href="http://127.0.0.1:5500/index.html" target="_blank"    rel="noopener noreferrer"><span style="color: var(--iris, #4D5AE5);">Web</span>Studio</a>
 
-      <ul class="navigation-section">
-        <li>
-          <a href="/" class="navigation-studio" target="_blank" rel="noopener noreferrer">Studio</a>
-        </li>
+          <ul class="navigation-section">
+            <li>
+              <a href="/" class="navigation-studio" target="_blank" rel="noopener noreferrer">Studio</a>
+            </li>
 
-        <li>
-          <a class="navigation-portfolio" href="http://127.0.0.1:5500/portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
-        </li>
+            <li>
+              <a class="navigation-portfolio" href="http://127.0.0.1:5500/portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            </li>
 
-        <li>
-          <a class="navigation-portfolio" href="#" target="_blank" rel="noopener noreferrer">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-
-    <address class="address-section">
-      <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="telephone" href="tel:+110001111111">+11 (000) 111-11-11</a>
-    </address>
+            <li>
+              <a class="navigation-portfolio" href="#" target="_blank" rel="noopener noreferrer">Contacts</a>
+            </li>
+          </ul>
+      </nav> 
+      <address class="address-section">
+        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="telephone" href="tel:+110001111111">+11 (000) 111-11-11</a> 
+      </address>
+    </div>
   </header>
   <main>
     <!-- Hero Section -->
-    <section>
       <div class="hero-container">
-        <h1 class="hero-header">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>   
+        <section>
+          <div class="hero-header">
+            <h1>Effective solutions for your business</h1>
+          </div>
+          <button class="hero-button" type="button">Order Service</button>
+        </section>
       </div>
-    </section>
-
-<!-- Section 1 -->
-    <section>
-      <div class="section1">
+    
+    <!-- Section 1 -->
+    <div class="section1-container">
+      <section>
         <h2 hidden>Feature</h2>
-          <ul>
+          <ul class="section1">
             <li>
               <h3>Strategy</h3>
               <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
@@ -75,13 +79,15 @@
               </li>
             </li>
           </ul>
-      </div>
     </section>
-<!-- Section 2 -->
-    <section>
-      <div class="section2">
-        <h2>What are we doing</h2>
-          <ul>
+    </div>
+    <!-- Section 2 -->
+    <div class="section2-container">
+      <section>
+        <div class="section2-header">
+          <h2>What are we doing</h2>
+        </div>
+          <ul class="section2">
             <li>
               <img src="images/section2-img1.jpg" alt="desktop" width="360" height="300">
             </li>
@@ -94,14 +100,13 @@
               <img src="images/section2-img3.jpg" alt="mobiles" width="360" height="300">
             </li>
           </ul>
-      </div>
-      
-    </section>
-<!-- Section 3 -->
+      </section>
+    </div>
+    <!-- Section 3 -->
     <section>
-      <div class="section3">
+      <div class="section3-container">
         <h2>Our team</h2>
-          <ul>
+          <ul class="section3">
             <li>
               <img src="images/section3-img1.jpg" alt="mobiles" width="360" height="300">
                 <h3>Mark Guerrero</h3>
