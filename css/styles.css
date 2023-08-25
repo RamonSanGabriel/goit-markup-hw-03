@@ -1,11 +1,15 @@
+* {
+  font: inherit;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--navyblue,#2E2F42);
   color: var(--cloud, #F4F4FD);
   color: var(--ocean,#404BBF);
   color: var(--slate, #434455);
+  max-width: fit-content;
   /* flex-shrink: 0; */
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* white-space: nowrap; */
 }
   /* Navigation container section  */
@@ -34,6 +38,7 @@ body {
   text-decoration: none;
   padding: 25.5px 76px 25.5px 156px;
 }
+
 .navigation-logo-web {
   color: var(--cloud, #F4F4FD);
 }
@@ -62,6 +67,7 @@ body {
 .navigation-portfolio:hover {
   color: var(--ocean,#404BBF);
 }
+
 .navigation-contacts:hover {
   color: var(--ocean,#404BBF);
 }
@@ -124,7 +130,7 @@ body {
   width: 496px;
   display: flex;
   color: var(--white, #FFF);
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 3.75rem;
   letter-spacing: 1.12px;
@@ -132,9 +138,6 @@ body {
   /* background-color: yellow; */
 }
 
-/* .hero-header h1 {
-  display: inline-block;
-} */
 .hero-button  {
   display: inline-flex;
   /* width: 169px; */
@@ -188,18 +191,23 @@ body {
 }
 
 .section2-container {
-/* background-color: lightcoral; */
+background-color: lightcoral;
 display: flex;
 justify-content: center;
+padding-left: 156px;
+padding-right: 156px;
+padding-bottom: 120px;
 }
 
 .section2 {
   list-style: none;
   display: flex;
   column-gap: 24px;
+  padding-top: 72px;
 }
-.section2-header h2,
-.section3 h2 {
+.section2-header,
+.section3-header
+{
   color: var(--navyblue,#2E2F42);
   text-align: center;
   font-size: 36px;
@@ -207,26 +215,25 @@ justify-content: center;
   line-height: 2.5rem;
   letter-spacing: 0.72;
   text-transform: capitalize;
+  padding-top: 120px;
 }
 
-.section3 {
+.section3-container {
+  display: flex;
   background: var(--cloud, #F4F4FD);
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
-.section3 h3 {
-  color: var(--navyblue, #2E2F42);
+.section3-images {
+  display: inline-flex;
   text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.4px;
-}
-
-.section3 p {
-  color: var(--slate, #434455);
-  text-align: center;
-  line-height: 1.5rem;
-  letter-spacing: 0.32px;
+  list-style-type: none;
+  gap: 24px;
+  padding-top: 72px;
+  /* width: 264px;
+  height: 260px; */
+  background-color: lightblue;
 }
 
 /* CSS for Portfolio */
@@ -280,6 +287,7 @@ justify-content: center;
   line-height: 1.5rem;
   letter-spacing: 0.32px;
 }
+
 .footer-container {
   position: relative;
   background-color: var(--iris, #2E2F42);
@@ -319,11 +327,3 @@ justify-content: center;
   height: 72px;
   text-align:left;
   }
-
- 
-
- 
-
-  /* sections use one class, set top and bottom paddings at 120px 
-  .section {
-  } */
