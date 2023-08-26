@@ -7,10 +7,9 @@ body {
   color: var(--cloud, #F4F4FD);
   color: var(--ocean,#404BBF);
   color: var(--slate, #434455);
-  max-width: fit-content;
   flex-shrink: 0;
   max-width: 1440px;
-  /* white-space: nowrap; */
+  min-width: fit-content;
 }
   /* Navigation container section  */
 .navigation-container {
@@ -19,6 +18,8 @@ body {
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
+  max-width: 3000px;
+  /* white-space: nowrap; */
 } 
 
 .navigation-logo {
@@ -52,6 +53,7 @@ body {
   display: inline-flex;
   list-style-type: none;
   gap: 40px;
+  white-space: nowrap;
 }
 
 .navigation-studio, 
