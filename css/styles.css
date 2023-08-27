@@ -8,28 +8,31 @@ body {
   color: var(--ocean,#404BBF);
   color: var(--slate, #434455);
   flex-shrink: 0;
-  max-width: 1440px;
-  min-width: fit-content;
+  min-width: 1158px;
+  /* min-width: fit-content; */
 }
   /* Navigation container section  */
-.navigation-container {
-  display: flex;
+.container {
+  display: inline-flex;
   border-bottom: 1px solid var(--cornflower, #E7E9FC);
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
-  max-width: 3000px;
-  /* white-space: nowrap; */
-} 
+  width: 1158px;
+}
+
+.navigation-container {
+  align-items: center;
+}
 
 .navigation-logo {
   display: inline-flex;
   text-decoration: none;
-  padding: 25.5px 76px 25.5px 156px;
+  padding: 24.5px 76px 24.5px 0;
 }
 
-.navigation-logo-web,
-.footer-logo-web {
+.navigation-logo-web {
+  display: inline-flex;
   color: var(--iris, #4D5AE5);
   font-family: Raleway;
   font-size: 18px;
@@ -47,17 +50,35 @@ body {
   line-height: 1.313em;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  width: 71px;
   }
 
 .navigation-section {
   display: inline-flex;
   list-style-type: none;
-  gap: 40px;
-  white-space: nowrap;
+  padding: 24px 0px;
 }
 
-.navigation-studio, 
-.navigation-portfolio,
+.navigation-studio {
+  text-decoration: none;
+  color: var(--navyblue,#2E2F42);
+  font-weight: 500;
+  line-height: 1.5em; 
+  letter-spacing: 0.32px;
+  margin-right: 40px;
+  margin-left: 0px;
+}
+
+.navigation-portfolio {
+  text-decoration: none;
+  color: var(--navyblue,#2E2F42);
+  font-weight: 500;
+  line-height: 1.5em; 
+  letter-spacing: 0.32px;
+  justify-content: center;
+  margin-right: 40px;
+}
+
 .navigation-contacts {
   text-decoration: none;
   color: var(--navyblue,#2E2F42);
@@ -65,10 +86,6 @@ body {
   line-height: 1.5em; 
   letter-spacing: 0.32px;
   justify-content: center;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  /* border: 5px solid blue; */
 }
   
 .navigation-studio:hover {
@@ -82,28 +99,26 @@ body {
 .navigation-contacts:hover {
   color: var(--ocean,#404BBF);
 }
-
 /* .navigation-menu {
   border: 5px solid red;
 } */
-
-
 .address-section {
   display: inline-flex;
   margin-left: auto;
   padding-right: 156px;
   padding: 24px 156px 24px 10px;
-  gap: 40px;
-  /* border: 5px solid lightcoral; */
+  /* gap: 40px; */
 }
 
-.address-section a {
+.address-section-email,
+.address-section-telephone {
   display: inline-flex;
   color: var(--slate, #434455);
   font-style: normal;
   line-height: 1.5rem; 
   letter-spacing: 0.32px;
   text-decoration: none;
+  margin-right: 40px;
 }
 
 .address-section-email:hover {
@@ -115,36 +130,43 @@ body {
 }
   /* Hero container section  */
 .hero-container { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
   text-align: center;
-  /* width: 1440px; */
+  width: 1158px;
   /* height: 600px; */
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  /* margin: 0px 316px 0px; */
+  /* padding-right: 472px; */
+  /* padding: 120px 472px; */
   /* padding-top: 188px; */
-  /* padding-left: 472px;
-  padding-right: 472px;
-  padding-bottom: 292px; */
-  padding: 120px 472px;
+  /* padding-bottom: 292px; */
   background-color: var(--navyblue,#2E2F42);
+  /* border: 3px solid red; */
 }
 
-.hero-header {
-  width: 496px;
-  display: flex;
+.hero-header { 
+  /* width: 496px; */
+  /* display: flex; */
   color: var(--white, #FFF);
   font-size: 56px;
   font-weight: 700;
   line-height: 3.75rem;
   letter-spacing: 1.12px;
+  margin: 0px 316px;
+  padding: 188px 0 48px;
   text-transform: capitalize;
-  /* background-color: yellow; */
+  border: 5px solid lightseagreen;
 }
-
+.hero-button-container {
+  border: 3px solid red;
+  padding-top: 48px;
+  padding-bottom: 188px;
+}
 .hero-button  {
-  display: inline-flex;
+  /* display: flex; */
   /* width: 169px; */
   /* height: 56px; */
   color: var(--white, #FFF);
@@ -162,7 +184,7 @@ body {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-  
+
 }
 
 .hero-button:hover {
@@ -312,6 +334,13 @@ padding-bottom: 120px;
 
   .footer-logo-web {
     color: var(--iris, #4D5AE5);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.313em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+
   }
 
   .footer-logo-studio {
