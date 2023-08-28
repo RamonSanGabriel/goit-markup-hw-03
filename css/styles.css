@@ -158,10 +158,10 @@ body {
   margin: 0px 316px;
   padding: 188px 0 48px;
   text-transform: capitalize;
-  border: 5px solid lightseagreen;
+  /* border: 5px solid lightseagreen; */
 }
 .hero-button-container {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   padding-top: 48px;
   padding-bottom: 188px;
 }
