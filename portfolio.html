@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="modern-normalize.css">
+  <link rel="stylesheet" href="/css/modern-normalize.css">
   <link rel="stylesheet" href="css/styles.css">
- 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&    display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&    display=swap" rel="stylesheet">
 
   <title>Portfolio</title>
 
@@ -24,132 +23,111 @@
 
 <body>
   <header>
-    <nav class="navigation-section">
-      <a href="./index.html"><span class="navigation-logo-web">Web</span>Studio</a>
-      <ul class="navigation-section">
-        <li class="navigation-list">
-          <a href="./index.html">Studio</a>
-        </li>
-        <li class="navigation-list">
-          <a href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="navigation-list">
-          <a href="">Contacts</a>
-        </li>
-      </ul>    </nav>
-
-    <address class="address-section">
-      <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="telephone" href="tel:+110001111111">+11 (000) 111-11-11</a>
-    </address>
-
+    <div class="container">
+      <nav class="navigation">
+        <a href="./index.html"><span class="navigation-logo-web">Web</span>Studio</a>
+        <ul class="navigation-section">
+          <li class="navigation-list">
+            <a href="./index.html">Studio</a>
+          </li>
+          <li class="navigation-list">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation-list">
+            <a href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address-section">
+        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="telephone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+      </address>
   </header>
-
   <main>
-
     <article>
       <!-- Filters -->
       <section>
-        <ul class="filter-button">
+        <ul class="filter">
           <li>
-            <button class="filter-buttons" type="button">All</button>
+            <button type="button">All</button>
           </li>
           <li>
-            <button class="filter-buttons" type="button">Website</button>
+            <button type="button">Website</button>
           </li>
           <li>
-            <button class="filter-buttons" type="button">App</button>
+            <button type="button">App</button>
           </li>
           <li>
-            <button class="filter-buttons" type="button">Design</button>
+            <button type="button">Design</button>
           </li>
           <li>
-            <button class="filter-buttons" type="button">Marketing</button>
+            <button type="button">Marketing</button>
           </li>
         </ul>
       </section>
-
-      <!-- Section 1 (Row 1) -->
+      <!-- Project Card -->
       <section>
-        <ul class="section1-portfolio">
+        <ul class="card-section">
           <li>
-            <img src="images/row1-a.jpg" alt="Banking App Interface Concept Photo" width="360" height="300">
+            <img src="images/row1-a.jpg" alt="Banking App Interface Concept Photo">
             <h3>Banking App Interface Concept</h3>
-              <p>App</p>
+            <p>App</p>
           </li>
 
           <li>
-            <img src="images/row1-b.jpg" alt="Cashless Payment Photo" width="360" height="300">
+            <img src="images/row1-b.jpg" alt="Cashless Payment Photo">
             <h3>Cashless Payment</h3>
-              <p>Marketing</p>
+            <p>Marketing</p>
           </li>
 
           <li>
-            <img src="images/row1-c.jpg" alt="Meditation App Photo" width="360" height="300">
+            <img src="images/row1-c.jpg" alt="Meditation App Photo">
             <h3>Meditation App</h3>
-              <p>App</p>
+            <p>App</p>
           </li>
-        </ul>
-      </section>
 
-      <!-- Section 2 (Row 2) -->
-      <section>
-        <ul class="section2-portfolio">
           <li>
-            <img src="images/row2-a.jpg" alt="Taxi Service Photo" width="360" height="300">
+            <img src="images/row2-a.jpg" alt="Taxi Service Photo">
             <h3>Taxi Service</h3>
-              <p>Marketing</p>
+            <p>Marketing</p>
           </li>
 
           <li>
-            <img src="images/row2-b.jpg" alt="Screen Illustrations Photo" width="360" height="300">
+            <img src="images/row2-b.jpg" alt="Screen Illustrations Photo">
             <h3>Screen Illustrations</h3>
-              <p>Design</p>
+            <p>Design</p>
           </li>
 
           <li>
-            <img src="images/row2-c.jpg" alt="Online Courses Photo" width="360" height="300">
+            <img src="images/row2-c.jpg" alt="Online Courses Photo">
             <h3>Online Courses</h3>
-              <p>Marketing</p>
+            <p>Marketing</p>
           </li>
-        </ul>
-      </section>
 
-      <!-- Section 3 (Row 3) -->
-      <section>
-        <ul class="section3-portfolio">
           <li>
-            <img src="images/row3-a.jpg" alt="Instagram Stories Concept Photo" width="360" height="300">
+            <img src="images/row3-a.jpg" alt="Instagram Stories Concept Photo">
             <h3>Instagram Stories Concept</h3>
-              <p>Design</p>
+            <p>Design</p>
           </li>
 
           <li>
-            <img src="images/row3-b.jpg" alt="Organic Food Photo" width="360" height="300">
+            <img src="images/row3-b.jpg" alt="Organic Food Photo">
             <h3>Organic Food</h3>
-              <p>Web Site</p>
+            <p>Web Site</p>
           </li>
 
           <li>
-            <img src="images/row3-c.jpg" alt="Fresh Coffee Photo" width="360" height="300">
+            <img src="images/row3-c.jpg" alt="Fresh Coffee Photo">
             <h3>Fresh Coffee</h3>
-              <p>Web Site</p>
+            <p>Web Site</p>
           </li>
         </ul>
       </section>
-
-    </article>
-
   </main>
-
-  <footer>
-    <div class="footer-container">
-      <a class="footer-logo" href="http://127.0.0.1:5500/index.html" target="_blank" rel="=noopener noreferrer"><span style="color: var(--iris, #4D5AE5);">Web</span><span style="color: var(--cloud, #F4F4FD);">Studio</span></a>
-
-     <p class="footer-content">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-    </div>
+  <footer class="footer">
+    <a href="./index.html"><span class="footer-logo-web">Web</span>Studio</a>
+    <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
   </footer>
-
 </body>
 
 </html>
