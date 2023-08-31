@@ -278,12 +278,17 @@ p {
   grid-template-columns: auto auto auto;
   list-style-type: none;
   gap: 48px 24px;
-  padding: 0;
 }
 .card-section li {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
+}
+.card-section img {
   width: 360px;
+}
+.card-section h3,
+.card-section p {
+  margin-left: 16px;
 }
 .footer {
   background-color: var(--navyblue);
