@@ -20,7 +20,6 @@
   width: 1158px;
   padding: 0;
   margin: 0;
-  /* viewport-fit: auto; */
 }
 h1,
 h2,
@@ -227,15 +226,13 @@ p {
 .team-img {
   width: 264px;
 }
-.team-list h3,
-.card-section h3 {
+.team-list h3 {
   margin-top: 32px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.4px;
 }
-.team-list p,
-.card-section p {
+.team-list p {
   margin-top: 8px;
   margin-bottom: 32px;
   color: var(--slate);
@@ -279,16 +276,27 @@ p {
   list-style-type: none;
   gap: 48px 24px;
 }
-.card-section li {
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
-}
+
 .card-section img {
   width: 360px;
 }
-.card-section h3,
-.card-section p {
-  margin-left: 16px;
+.card-content {
+  border-left: 1px solid var(--cornflower, #e7e9fc);
+  border-right: 1px solid var(--cornflower, #e7e9fc);
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  /* border-top: 1px solid var(--cornflower, #e7e9fc); */
+  background: var(--white, #fff);
+  padding: 0;
+  padding: 32px 16px;
+}
+.card-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+.card-content p {
+  margin-top: 16px;
+  color: var(--slate);
 }
 .footer {
   background-color: var(--navyblue);
