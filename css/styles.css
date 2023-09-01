@@ -49,6 +49,8 @@ p {
   flex-shrink: 0;
   text-decoration: none;
   width: 1158px;
+  padding: 0px 15px;
+  border: solid lightcoral;
 }
 
 .navigation>a {
@@ -174,7 +176,10 @@ p {
   margin-top: 53px;
   margin-bottom: 120px;
 }
-
+.section-feature {
+  padding: 0px 15px;
+  /* border: solid teal; */
+}
 .section-feature li {
   margin-right: 24px;
 }
@@ -202,27 +207,35 @@ p {
   letter-spacing: 0.72px;
   list-style-type: none;
   text-align: center;
-  padding: 0;
   text-transform: capitalize;
   margin-bottom: 72px;
+  padding: 0px 15px;
 }
 
 .services-list {
   display: inline-flex;
   list-style-type: none;
-  padding: 0;
   width: 1158px;
+  padding: 0px 15px;
 }
 
 .services-img {
   display: inline-flex;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   width: 360px;
   border: 1px solid var(--cornflower, #e7e9fc);
 }
 
+.services-img:not(:last-child) {
+  margin-right: 24px;
+}
+
 .section-team {
   text-align: center;
+  background-color: var(--cloud);
+  padding: 120px 0px;
+  margin-top: 120px;
+  width: 1158px;
 }
 
 .team-title {
@@ -230,20 +243,26 @@ p {
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: 0.72px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   margin-bottom: 72px;
   text-transform: capitalize;
 }
 
 .team-list {
-  display: flex;
+  display: inline-flex;
   text-align: center;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-list li {
+  display: inline-flex;
+  padding-bottom: 0px;
+  /* margin: 0 15px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -270,6 +289,7 @@ p {
   margin-top: 8px;
   margin-bottom: 32px;
   color: var(--slate);
+  text-align: center;
 }
 
 /* Project Card Section */
@@ -322,7 +342,7 @@ p {
 }
 
 .card-list img {
-  display: flex;
+  display: inline-flex;
   width: 360px;
   padding-bottom: 0px;
   flex-direction: column;
@@ -353,7 +373,6 @@ p {
 .footer {
   background-color: var(--navyblue);
   width: 100%;
-  margin-top: 120px;
   padding: 101.5px 0px 100px;
 }
 
@@ -380,9 +399,7 @@ p {
 }
 
 .footer p {
-  color: var(--cloud, #f4f4fd);
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  color: var(--cloud);
   text-decoration: none;
   width: 264px;
   text-align: left;
