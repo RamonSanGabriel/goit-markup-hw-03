@@ -49,6 +49,7 @@ p {
 /* Main Container */
 .container {
   max-width: 1158px;
+  /* border: 3px solid tomato; */
 }
 
 /* Navigation Section  */
@@ -297,14 +298,13 @@ p {
 
 /* Portfolio: Project Card Section */
 .filter {
-  display: inline-flex;
+  display: flex;
   list-style-type: none;
-  justify-content: center;
   width: 100%;
-  margin: 96px 0px 72px;
-  padding: 0;
+  padding: 96px 15px 72px;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .filter button {
@@ -331,26 +331,24 @@ p {
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.card-section {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  padding: 0;
+.container-card {
+  padding: 0px 15px 120px;
+  /* border: 3px solid; */
 }
 
-.card-list {
-  width: calc((100% - 48px) / 3);
+.card-section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 48px;
+  /* border: solid teal; */
 }
 
 .card-list img {
-  display: inline-flex;
   width: 360px;
-  padding-bottom: 0px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
 }
 
 .card-content {
@@ -359,7 +357,8 @@ p {
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
   padding: 32px 16px;
-  width: 360px;
+  /* width: 360px; */
+  /* border: 3px solid yellow; */
 }
 
 .card-content h3 {
@@ -369,7 +368,7 @@ p {
 }
 
 .card-content p {
-  margin-top: 16px;
+  padding-top: 8px;
   color: var(--slate);
 }
 
