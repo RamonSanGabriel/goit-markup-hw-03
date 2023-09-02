@@ -13,7 +13,7 @@
   --cornflower: #e7e9fc;
 }
 
-* body {
+body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--navyblue);
@@ -44,14 +44,11 @@ p {
 .section-services,
 .section-team {
   padding: 120px 0;
-
 }
 
 /* Main Container */
 .container {
-  border: 3px solid tomato;
   max-width: 1158px;
-  /* overflow: auto; */
 }
 
 /* Navigation Section  */
@@ -145,7 +142,6 @@ p {
   line-height: 3.75rem;
   letter-spacing: 1.12px;
   text-transform: capitalize;
-  /* flex-shrink: 0; */
   padding-bottom: 48px;
 }
 
@@ -176,11 +172,9 @@ p {
 
 /* Index: Section 1 (Feature) */
 .section-feature {
-  display: flex;
+  display: inline-flex;
   margin: 0;
   padding-left: 15px;
-  padding-right: 15px;
-  /* border: 3px solid teal; */
 }
 
 .section-feature li {
@@ -214,9 +208,11 @@ p {
   padding-bottom: 72px;
   text-transform: capitalize;
 }
+
 .section-services {
   text-align: center;
 }
+
 .services-list {
   display: inline-flex;
   list-style-type: none;
