@@ -20,14 +20,16 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.32px;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  max-width: 1158px;
+  flex-wrap: nowrap;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
+wid h5,
 h6,
 p {
   margin: 0;
@@ -46,21 +48,30 @@ p {
   padding: 120px 0;
 }
 
-/* Main Container */
 .container {
-  max-width: 1158px;
-  /* border: 3px solid tomato; */
-}
-
-/* Navigation Section  */
-.container-header {
-  display: flex;
-  border-bottom: 1px solid var(--cornflower);
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 15px; */
   align-items: center;
   text-decoration: none;
   width: 1158px;
-  padding: 24px 15px;
+  /* border: 3px solid tomato; */
 }
+
+/* Header Section*/
+.header .container {
+  border-bottom: 1px solid var(--cornflower);
+  display: flex;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  padding: 24px 15px;
+  align-items: center;
+  /* text-decoration: none; */
+  width: 100%;
+}
+
+/* Navigation Section  */
 
 .navigation>a {
   color: var(--navyblue);
@@ -107,12 +118,12 @@ p {
 }
 
 .address-section {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
 }
 
 .address-section a {
-  display: flex;
+  display: inline-flex;
   color: var(--slate, #434455);
   font-style: normal;
   line-height: 1.5rem;
@@ -171,23 +182,34 @@ p {
   background: var(--ocean);
 }
 
-/* Index: Section 1 (Feature) */
-.section-feature {
-  display: inline-flex;
-  margin: 0;
-  padding-left: 15px;
-}
+/* Studio: Section 1 (Feature) */
 
-.section-feature li {
+
+/* .section-feature li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none;
   width: 264px;
   margin-right: 24px;
+} */
+.section-feature {
+    max-width: 1200px;
+      padding: 15px;
+      margin-left: auto;
+      margin-right: auto;
 }
-
-.section-feature h3 {
+.feature-set {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: 24px;
+  /* padding: 0; */
+}
+.feauture-item {
+  flex-basis: calc((100% - 3 * 24px)) / 4;
+}
+.feature-item h3 {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
