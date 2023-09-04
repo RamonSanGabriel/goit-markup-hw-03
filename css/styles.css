@@ -183,33 +183,31 @@ p {
 }
 
 /* Studio: Section 1 (Feature) */
-
-
-/* .section-feature li {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style-type: none;
-  width: 264px;
-  margin-right: 24px;
-} */
-
+.section-feature {
+  border: 3px solid tomato;
+  /* padding: 0; */
+}
 
 .feature-set {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  /* column-gap: 24px; */
   align-items: flex-start;
-  /* column-gap: 24px; */
-  /* padding: 0; */
+  column-gap: 24px;
+  margin: 0;
+  padding: 0;
+  border: 3px solid blue;
 }
-
 .feature-item {
   width: 264px;
-  flex-basis: calc ((300-24px)) / 2;
-
+  flex-basis: calc((300-24px)) / 3;
+  column-gap: 24px;
 }
+.feature-item:last-child {
+  column-gap: 0;
+}
+
+
 
 .feature-item h3 {
   color: var(--navyblue);
