@@ -183,10 +183,6 @@ p {
 }
 
 /* Studio: Section 1 (Feature) */
-.section-feature {
-  /* border: 3px solid tomato; */
-  /* padding: 0; */
-}
 
 .feature-set {
   display: flex;
@@ -198,16 +194,16 @@ p {
   padding: 0;
   /* border: 3px solid blue; */
 }
+
 .feature-item {
   width: 264px;
-  flex-basis: calc((300-24px)) / 3;
+  flex-basis: calc((100%-24px)) / 3;
   column-gap: 24px;
 }
-.feature-item:last-child {
-  column-gap: 0;
+
+.feature-set:last-child {
+  column-gap: 24px;
 }
-
-
 
 .feature-item h3 {
   color: var(--navyblue);
