@@ -184,7 +184,7 @@ p {
 
 /* Studio: Section 1 (Feature) */
 .section-feature {
-  border: 3px solid tomato;
+  /* border: 3px solid tomato; */
   /* padding: 0; */
 }
 
@@ -196,7 +196,7 @@ p {
   column-gap: 24px;
   margin: 0;
   padding: 0;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 .feature-item {
   width: 264px;
