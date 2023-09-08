@@ -218,7 +218,7 @@ p {
   list-style: none;
   justify-content: center;
   padding: 72px 0px 0;
-
+  margin: 0;
 }
 
 .services-list {
