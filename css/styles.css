@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
@@ -19,9 +20,6 @@ body {
   color: var(--navyblue);
   line-height: 1.5rem;
   letter-spacing: 0.32px;
-  padding: 0;
-  margin: auto;
-  width: 1158px;
 }
 
 h1,
@@ -40,15 +38,56 @@ p {
   margin-right: 0;
 }
 
+.services-list:not(:last-child),
+.feature-list:not(:last-child),
+.team-list:not(:last-child) {
+  margin-right: 24px;
+}
+
+.section {
+  padding-bottom: 120px;
+  border: 10px solid yellow;
+}
+
+.container {
+  padding: 0px 15px;
+  border: 5px solid tomato;
+  width: 1158px;
+  /* margin: auto; */
+}
+
+.services-menu,
+.feature-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+}
+
+.services-list,
+.feature-list {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
 /* Header Section*/
 .container-header {
   border-bottom: 1px solid var(--cornflower);
-  display: flex;
+  /* display: flex; */
   padding: 24px 15px;
   align-items: center;
 }
 
 /* Navigation Section  */
+.navigation,
+.navigation-menu,
+.address-section {
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+}
+
 .navigation>a {
   color: var(--navyblue);
   text-decoration: none;
@@ -59,6 +98,7 @@ p {
   line-height: 1.313rem;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .navigation-logo-web {
@@ -73,49 +113,56 @@ p {
 }
 
 .navigation-menu {
-  display: inline-flex;
-  list-style-type: none;
   color: var(--navyblue, #2e2f42);
+  padding: 0;
 }
 
-.navigation-menu li:not(:last-child) {
-  margin-right: 40px;
+.navigation-list:not(:last-child) {
+  /* margin-right: 40px; */
+}
+
+.navigation-list {
+  /* display: inline-flex; */
+  /* border: 2px solid blue; */
 }
 
 .navigation-list a {
-  text-decoration: none;
+  /* display: inline-flex; */
+  /* text-decoration: none;
   color: var(--navyblue, #2e2f42);
-  font-weight: 500;
+  font-weight: 500; */
 }
 
 .navigation-menu a:hover {
-  color: var(--ocean, #404bbf);
+  /* color: var(--ocean, #404bbf); */
 }
 
-.address-section {
-  display: inline-flex;
-  margin-left: auto;
+.address-links {
+  /* display: inline-flex; */
+  /* margin-left: auto; */
+  border: 2px solid purple;
 }
 
-.address-section a {
-  display: inline-flex;
-  color: var(--slate, #434455);
+.address-links a {
+  /* display: inline-flex; */
+  /* color: var(--slate, #434455);
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.32px;
   text-decoration: none;
   margin-right: 40px;
+  border: 2px solid purple; */
 }
 
-.address-section a:hover {
-  color: var(--ocean, #404bbf);
+.address-linkd a:hover {
+  /* color: var(--ocean, #404bbf); */
 }
 
 /* Hero section */
-.container-hero {
+.hero {
+  padding: 188px 15px 188px;
   background-color: var(--navyblue);
   text-align: center;
-  padding: 120px 15px;
 }
 
 .hero-title {
@@ -125,10 +172,10 @@ p {
   line-height: 3.75rem;
   letter-spacing: 1.12px;
   text-transform: capitalize;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
-.container-hero span {
+.container span {
   text-transform: lowercase;
 }
 
@@ -144,6 +191,7 @@ p {
   cursor: pointer;
   padding: 16px 32px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .hero-button:hover {
@@ -151,34 +199,12 @@ p {
 }
 
 /* Studio: Section 1 (Feature Section) */
-.section-feature {
-  padding: 120px 0px;
-}
-
-.container-feature {
-  padding: 0px 15px;
-  width: 1158px;
-}
-
-.feature-menu {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  align-items: flex-start;
-  column-gap: 24px;
-  margin: 0;
-  padding: 0;
-
+.container li {
+  background-color: transparent;
 }
 
 .feature-list {
-  width: 264px;
   flex-basis: calc((100% - 24px * 3) / 4);
-  /* column-gap: 24px; */
-}
-
-.feature-menu:last-child {
-  column-gap: 24px;
 }
 
 .feature-list h3 {
@@ -194,44 +220,14 @@ p {
 }
 
 /* Index: Section 2 (What we are doing) */
-.section-services {
-  padding-bottom: 120px;
-}
-
-.container-services {
-  text-align: center;
-  padding: 0px 15px;
-}
-
 .services-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-}
-
-.services-menu {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  width: 360px;
-  list-style: none;
-  justify-content: center;
-  padding: 72px 0px 0;
-  margin: 0;
-}
-
-.services-list {
-  margin-right: 0 24px;
-  flex-basis: calc((100% - 24px) / 3);
-}
-
-.services-list:not(:last-child) {
-  margin-right: 24px;
-}
-
-.services-list img {
-  width: 360px;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 /* Index: Section 3 (Our Team) */
@@ -241,22 +237,19 @@ p {
   text-align: center;
 }
 
-.container-team {
-  padding: 0px 15px;
-}
-
 .team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: 0.72px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .team-menu {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
   padding: 0;
@@ -264,21 +257,15 @@ p {
 }
 
 .team-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-bottom: 32px; */
-  /* gap: 32px; */
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.team-list:not(:last-child) {
-  margin-right: 24px;
 }
 
 .team-img {
@@ -299,7 +286,6 @@ p {
 }
 
 /* Portfolio: Project Card Section */
-
 .container-filter {
   display: flex;
   padding: 96px 15px 72px;
@@ -401,10 +387,9 @@ p {
   color: var(--slate);
 }
 
-.container-footer {
+.footer {
   background-color: var(--navyblue);
-  width: 100%;
-  padding: 101.5px 15px 100px;
+  padding: 100px 15px;
 }
 
 .footer-logo-web {
@@ -417,7 +402,7 @@ p {
   text-transform: uppercase;
 }
 
-.container-footer>a {
+.footer>a {
   color: var(--cloud, #f4f4fd);
   font-family: Raleway;
   font-size: 18px;
@@ -428,10 +413,9 @@ p {
   text-decoration: none;
 }
 
-.container-footer p {
+.footer p {
   color: var(--cloud);
   text-decoration: none;
   width: 264px;
-  text-align: left;
-  margin-top: 17.5px;
+  margin-top: 17px;
 }
