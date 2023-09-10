@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -40,8 +41,7 @@ p {
 .container {
   padding: 0px 15px;
   width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .address-section a:last-child,
@@ -64,8 +64,8 @@ p {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  padding: 0;
-  margin: 0;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
 .services-list,
@@ -80,20 +80,23 @@ p {
 }
 
 /* Header Section */
-.container-header {
+header {
   display: flex;
-  border-bottom: 1px solid var(--cornflower);
+  justify-content: center;
   padding: 24px 15px;
   align-items: center;
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.container-header {
+  display: flex;
+  padding: 0px 15px;
+  width: 1158px;
 }
 
 /* Navigation Section  */
-.navigation-header,
-.navigation-menu,
-.navigation-list {
-  display: inline-block;
-  list-style: none;
-  align-items: center;
+.navigation-header {
+  display: flex;
 }
 
 .navigation-header>a {
@@ -108,7 +111,7 @@ p {
   margin-right: 76px;
 }
 
-.navigation-logo-web {
+.navigation-header .navigation-logo-web {
   color: var(--iris, #4d5ae5);
   font-family: Raleway;
   font-size: 18px;
@@ -119,8 +122,16 @@ p {
 }
 
 .navigation-menu {
-  padding: 0;
+  display: flex;
+  list-style: none;
+  /* justify-content: space-between; */
+  /* padding: 0; */
 }
+
+/* 
+.navigation-list {
+  display: flex;
+} */
 
 .navigation-list:not(:last-child) {
   margin-right: 40px;
@@ -137,8 +148,9 @@ p {
 }
 
 .address-section {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
+  align-items: flex-start;
+  /* flex-wrap: nowrap; */
   margin-left: auto;
 }
 
@@ -156,10 +168,12 @@ p {
 }
 
 /* Hero section */
-.hero {
+.section-hero {
   padding: 188px 15px;
-  background-color: var(--navyblue);
   text-align: center;
+  margin: auto;
+  background-color: var(--navyblue);
+  /* width: 1158px; */
 }
 
 .hero-title {
@@ -172,9 +186,9 @@ p {
   margin-bottom: 48px;
 }
 
-.container span {
+/* .container span {
   text-transform: lowercase;
-}
+} */
 
 .hero-button {
   color: var(--white, #fff);
@@ -221,9 +235,9 @@ p {
 
 /* Index: Section 3 (Our Team) */
 .section-team {
-  background-color: var(--cloud);
   padding: 120px 0px;
   text-align: center;
+  background-color: var(--cloud);
 }
 
 .team-title {
@@ -343,6 +357,8 @@ p {
 .footer {
   background-color: var(--navyblue);
   padding: 100px 15px;
+  /* width: 1158px; */
+  margin: auto;
 }
 
 .footer-logo-web {
