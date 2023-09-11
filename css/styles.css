@@ -64,7 +64,7 @@ p {
   list-style: none;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .services-list,
@@ -76,7 +76,7 @@ p {
 
 .services-img,
 .team-img {
-  width: 100%;
+  width: auto;
 }
 
 /* Header Section */
@@ -91,7 +91,7 @@ header {
 .container-header {
   display: flex;
   padding: 0px 15px;
-  width: 100%;
+  width: 1158px;
   margin: auto;
 }
 
@@ -191,7 +191,7 @@ header {
 
 .hero-title span {
   text-transform: lowercase;
-} 
+}
 
 .hero-button {
   color: var(--white, #fff);
