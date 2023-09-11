@@ -33,14 +33,16 @@ p {
   margin: 0;
   padding: 0;
 }
+/* section {
 
+} */
 .section {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .container {
   padding: 0px 15px;
-  width: 1158px;
+  max-width: 1158px;
   margin: auto;
 }
 
@@ -76,6 +78,7 @@ p {
 .services-img,
 .team-img {
   width: auto;
+  object-fit: cover;
 }
 
 /* Header Section */
@@ -201,7 +204,7 @@ header {
 
 /* Studio: Section 1 (Feature Section) */
 .section-feature {
-  padding: 120px 0px;
+  padding: 120px 0 0;
 }
 .feature-list h3 {
   color: var(--navyblue);
@@ -216,6 +219,9 @@ header {
 }
 
 /* Index: Section 2 (What we are doing) */
+.services {
+  padding-bottom: 120px;
+}
 .services-title {
   font-size: 36px;
   font-weight: 700;
@@ -271,7 +277,7 @@ header {
 
 /* Portfolio: Project Card Section */
 .section-filter {
-  padding: 96px 0px 72px;
+  padding: 96px 0 72px;
   justify-content: center;
 }
 
@@ -304,15 +310,19 @@ header {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
+section {
+  padding-bottom: 120px;
+}
 .card-section {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-}
+  gap: 48px 24px;
 
+}
+/* 
 .card-list:nth-child(3n+1) {
   margin-right: 24px;
   margin-bottom: 48px;
@@ -329,10 +339,11 @@ header {
 
 .card-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 
 .card-list img {
   width: auto;
+  object-fit: cover;
 }
 
 .card-content {
