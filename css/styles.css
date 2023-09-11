@@ -64,7 +64,6 @@ p {
   list-style: none;
   justify-content: center;
   align-items: center;
-  /* gap: 24px; */
 }
 
 .services-list,
@@ -126,14 +125,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  /* justify-content: space-between; */
-  /* padding: 0; */
 }
-
-/* 
-.navigation-list {
-  display: flex;
-} */
 
 .navigation-list:not(:last-child) {
   margin-right: 40px;
@@ -150,10 +142,6 @@ header {
 }
 
 .address-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  /* flex-wrap: nowrap; */
   margin-left: auto;
 }
 
@@ -186,7 +174,6 @@ header {
   letter-spacing: 1.12px;
   text-transform: capitalize;
   margin-bottom: 48px;
-  /* width: 496px; */
 }
 
 .hero-title span {
@@ -290,11 +277,9 @@ header {
 
 .filter-menu {
   display: flex;
-  /* flex-wrap: wrap; */
   list-style: none;
   justify-content: center;
   align-items: center;
-  /* gap: 24px; */
 }
 
 .filter-button {
@@ -372,7 +357,6 @@ header {
 .footer {
   background-color: var(--navyblue);
   padding: 100px 15px;
-  /* width: 1158px; */
   margin: auto;
 }
 
