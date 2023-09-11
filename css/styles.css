@@ -403,15 +403,3 @@ header {
   width: 264px;
   margin-top: 17px;
 }
-
-@media (min-width: 600px) {
-  .container { 
-    width: 1158px; 
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: 1158px;
-  }
-}
