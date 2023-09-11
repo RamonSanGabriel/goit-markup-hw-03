@@ -91,7 +91,8 @@ header {
 .container-header {
   display: flex;
   padding: 0px 15px;
-  width: 1158px;
+  width: 100%;
+  margin: auto;
 }
 
 /* Navigation Section  */
@@ -173,7 +174,6 @@ header {
   text-align: center;
   margin: auto;
   background-color: var(--navyblue);
-  /* width: 1158px; */
 }
 
 .hero-title {
@@ -184,11 +184,12 @@ header {
   letter-spacing: 1.12px;
   text-transform: capitalize;
   margin-bottom: 48px;
+  /* width: 496px; */
 }
 
-/* .container span {
+.hero-title span {
   text-transform: lowercase;
-} */
+} 
 
 .hero-button {
   color: var(--white, #fff);
