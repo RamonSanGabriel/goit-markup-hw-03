@@ -34,9 +34,6 @@ p {
   padding: 0;
 }
 
-/* section {
-
-} */
 .section {
   padding: 120px 0;
 }
@@ -52,34 +49,20 @@ p {
   margin-right: 0;
 }
 
-/* .services-list:not(:last-child),
-.feature-list:not(:last-child),
-.team-list:not(:last-child),
-.filter-list:not(:last-child) {
-  margin-right: 24px;
-} */
-
-.services-menu,
 .feature-menu,
+.services-menu,
 .team-menu,
-.card-menu {
+.card-menu,
+.filter-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: 48px 24px;
 }
-/* .card-menu {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-} */
 
 .services-list,
-.feature-list,
 .card-list,
 .team-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -104,12 +87,13 @@ header {
   display: flex;
   padding: 0px 15px;
   width: 1158px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Navigation Section  */
 .navigation-header {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-header>a {
@@ -138,7 +122,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
+}
+.navigation-menu {
+  flex-basis: calc(100% - 24px);
 }
 
 .navigation-list:not(:last-child) {
@@ -156,8 +142,10 @@ header {
 }
 
 .address-section {
+  flex-wrap: wrap;
   margin-left: auto;
 }
+
 
 .address-section a {
   color: var(--slate, #434455);
@@ -217,7 +205,9 @@ header {
 .section-feature {
   padding: 120px 0 0;
 }
-
+.feature-list {
+  flex-basis: calc(100% - 24px);
+}
 .feature-list h3 {
   color: var(--navyblue);
   font-size: 20px;
@@ -294,13 +284,6 @@ header {
   justify-content: center;
 }
 
-.filter-menu {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-
 .filter-button {
   cursor: pointer;
   border-radius: 4px;
@@ -327,25 +310,6 @@ header {
 section {
   padding-bottom: 120px;
 }
-
-/* 
-.card-list:nth-child(3n+1) {
-  margin-right: 24px;
-  margin-bottom: 48px;
-}
-
-.card-list:nth-child(3n+3) {
-  margin-left: 24px;
-  margin-bottom: 48px;
-}
-
-.card-list:nth-child(n+2) {
-  margin-bottom: 48px;
-}
-
-.card-list:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-} */
 
 .card-list img {
   width: auto;
