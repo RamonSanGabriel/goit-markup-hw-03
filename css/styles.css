@@ -61,7 +61,7 @@ p {
   align-items: flex-start;
   gap: 48px 24px;
 }
-
+.feature-list,
 .services-list,
 .card-list,
 .team-list {
@@ -122,9 +122,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-}
-.navigation-menu {
-  flex-basis: calc(100% - 24px);
 }
 
 .navigation-list:not(:last-child) {
@@ -204,9 +201,6 @@ header {
 /* Studio: Section 1 (Feature Section) */
 .section-feature {
   padding: 120px 0 0;
-}
-.feature-list {
-  flex-basis: calc(100% - 24px);
 }
 .feature-list h3 {
   color: var(--navyblue);
