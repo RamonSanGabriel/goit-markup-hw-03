@@ -62,17 +62,16 @@ p {
   gap: 24px;
 }
 .feature-list,
-.services-list,
 .card-list,
 .team-list {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
-.services-img,
+/* .services-img,
 .team-img {
   width: auto;
   object-fit: cover;
-}
+} */
 
 /* Header Section */
 header {
@@ -228,7 +227,9 @@ header {
   text-align: center;
   margin-bottom: 72px;
 }
-
+.services-list {
+  flex-basis: calc((100% - 48px) / 3);
+}
 /* Index: Section 3 (Our Team) */
 .section-team {
   padding: 120px 0px;
@@ -305,10 +306,10 @@ section {
   padding-bottom: 120px;
 }
 
-.card-list img {
+/* .card-list img {
   width: auto;
   object-fit: cover;
-}
+} */
 
 .card-content {
   border-left: 1px solid var(--cornflower, #e7e9fc);
