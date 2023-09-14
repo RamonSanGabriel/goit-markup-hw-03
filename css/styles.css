@@ -198,9 +198,6 @@ header {
 }
 
 /* Studio: Section 1 (Feature Section) */
-.section-feature {
-  padding: 120px 0 0;
-}
 .feature-list h3 {
   color: var(--navyblue);
   font-size: 20px;
