@@ -67,12 +67,6 @@ p {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-/* .services-img,
-.team-img {
-  width: auto;
-  object-fit: cover;
-} */
-
 /* Header Section */
 header {
   display: flex;
@@ -302,11 +296,6 @@ header {
 section {
   padding-bottom: 120px;
 }
-
-/* .card-list img {
-  width: auto;
-  object-fit: cover;
-} */
 
 .card-content {
   border-left: 1px solid var(--cornflower, #e7e9fc);
